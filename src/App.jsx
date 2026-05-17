@@ -10,7 +10,7 @@ import SignUp2 from "./pages2+/SignUp2";
 import Checkout from "./checkout/Checkout";
 
 import Footer from "./components/Footer";
-import Wishlist from './savat/WishList';
+import Wishlist from "./savat/Wishlist";
 import AccountPage from './account/AccountPage';
 import Savat from './like/Savat';
 import { getCurrentUser } from "./auth/session";

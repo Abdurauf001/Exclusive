@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Trash2, ShoppingCart } from "lucide-react";
-import "./Wishlist.css";
+import "./wishlist.css";
 import { API_BASE } from "../api/client";
 import { getCurrentUserId, readScopedItems, writeScopedItems, clearScopedItems } from "../auth/session";
 
