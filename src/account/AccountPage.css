@@ -1,0 +1,248 @@
+:root {
+  --primary-red: #DB4444;
+  --text-dark: #2A2A2A;
+  --text-gray: #7D7D7D;
+  --bg-input: #F5F5F5;
+  --bg-white: #FFFFFF;
+  --font-family: 'Poppins', sans-serif;
+}
+
+.account-page-container {
+    max-width: 1200px;
+    margin: 56px auto 80px;
+    padding: 0 20px;
+    font-family: var(--font-family);
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    color: var(--text-gray);
+}
+
+.breadcrumb-link {
+    color: var(--text-dark);
+}
+
+.breadcrumb span:last-child {
+    font-weight: 500;
+    color: var(--text-gray);
+}
+
+.account-main-layout {
+    display: flex;
+    gap: 70px;
+}
+
+.account-sidebar {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.welcome-text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    min-height: 24px;
+}
+
+.user-name {
+    font-weight: 600;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-main-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 20px 0 10px 0;
+}
+
+.menu-item {
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 5px 0 5px 20px; 
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-gray);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    color: var(--primary-red);
+    font-weight: 500;
+}
+
+.logout-btn {
+    margin-top: 30px;
+    background: none;
+    border: none;
+    color: var(--primary-red);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.account-content {
+    flex-grow: 1;
+}
+
+.edit-profile-form-container {
+    background-color: var(--bg-white);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+    padding: 32px 40px 40px;
+    border-radius: 4px;
+}
+
+.edit-profile-form-container h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-red);
+    margin-bottom: 22px;
+    margin-top: 0;
+}
+
+.name-inputs {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: var(--text-dark);
+    font-weight: 400;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: var(--bg-input);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.password-update-section {
+    margin-top: 20px;
+}
+
+.password-update-section .form-group {
+    margin-bottom: 10px; 
+}
+
+.password-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.password-section-header p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--text-dark);
+}
+
+.password-toggle-btn {
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    color: var(--text-dark);
+    border-radius: 6px;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.password-toggle-btn:hover {
+    border-color: var(--primary-red);
+    color: var(--primary-red);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.cancel-btn, .save-btn {
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.cancel-btn {
+    background: none;
+    border: none;
+    color: var(--text-dark);
+}
+
+.save-btn {
+    background-color: var(--primary-red);
+    color: white;
+    border: none;
+}
+
+.save-btn:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+    .account-main-layout {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .account-sidebar {
+        width: 100%;
+    }
+    
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .menu-main-title {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .name-inputs {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .password-section-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

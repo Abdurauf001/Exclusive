@@ -1,0 +1,253 @@
+.checkout-page {
+  width: min(1170px, calc(100% - 80px));
+  margin: 80px auto 100px;
+  font-family: Poppins, sans-serif;
+  color: #1f1f1f;
+}
+
+.checkout-breadcrumb {
+  font-size: 13px;
+  color: #8b8b8b;
+  margin-bottom: 38px;
+}
+
+.checkout-breadcrumb span {
+  color: #111;
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 470px) minmax(360px, 425px);
+  justify-content: space-between;
+  gap: 96px;
+  align-items: start;
+}
+
+.checkout-form-card,
+.checkout-summary-card {
+  background: #fff;
+}
+
+.checkout-form-card h1 {
+  font-size: 36px;
+  line-height: 1.15;
+  margin: 0 0 34px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.checkout-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #8f8f8f;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.checkout-grid label span {
+  color: #db4444;
+  margin-left: 2px;
+}
+
+.checkout-grid input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: #f5f5f5;
+  padding: 0 16px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.checkout-summary-card {
+  width: 100%;
+  padding-top: 82px;
+  justify-self: end;
+}
+
+.checkout-items {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.checkout-item-row,
+.checkout-total-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.checkout-item-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.checkout-item-left img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  background: transparent;
+  border-radius: 0;
+}
+
+.checkout-total-row {
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 15px;
+}
+
+.checkout-total-row.total {
+  font-weight: 600;
+}
+
+.checkout-payment-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 24px 0 30px;
+}
+
+.checkout-payment-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.checkout-radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #111;
+}
+
+.checkout-payment-icons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.pay-chip {
+  font-size: 11px;
+  line-height: 1;
+  padding: 4px 6px;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.pay-chip.bkash {
+  background: #e2136e;
+}
+
+.pay-chip.visa {
+  background: #1a1f71;
+}
+
+.pay-chip.mc {
+  background: #ff5f00;
+}
+
+.pay-chip.nagad {
+  background: #f58220;
+}
+
+.checkout-coupon-row {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.checkout-coupon-input {
+  flex: 1;
+  height: 54px;
+  border: 1px solid #1f1f1f;
+  border-radius: 4px;
+  padding: 0 16px;
+  font-size: 15px;
+  background: #fff;
+}
+
+.apply-coupon-btn {
+  min-width: 170px;
+  height: 54px;
+  border: none;
+  border-radius: 4px;
+  background: #db4444;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.place-order-btn {
+  min-width: 190px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  background: #db4444;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.checkout-save-info {
+  margin-top: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #1f1f1f;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.checkout-save-info input {
+  width: 16px;
+  height: 16px;
+  accent-color: #db4444;
+  margin-top: 2px;
+  flex: 0 0 auto;
+}
+
+.place-order-btn:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+@media (max-width: 980px) {
+  .checkout-page {
+    width: min(100%, calc(100% - 32px));
+    margin: 56px auto 72px;
+  }
+
+  .checkout-layout {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .checkout-summary-card {
+    padding-top: 0;
+    justify-self: stretch;
+  }
+
+  .checkout-payment-row,
+  .checkout-coupon-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
