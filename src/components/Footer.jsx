@@ -46,9 +46,9 @@ function Footer() {
         <div>
           <h3>Download App</h3>
           <p>Save $3 with App New User Only</p>
-          <img src="./assets/Frame 719.png" className="qr" alt="QR Code" />
+          <img src="/assets/Frame 719.png" className="qr" alt="QR Code" />
           <div className="app-buttons">
-            <img src="./assets/Frame 741.png" alt="Google Play" />
+            <img src="/assets/Frame 741.png" alt="Google Play" />
           </div>
         </div>
       </div>

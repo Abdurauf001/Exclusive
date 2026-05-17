@@ -1,9 +1,5 @@
-﻿import React from "react";
-import girls from "../../public/assets/image.png";
-import about1 from "../../public/assets/oqk.jpg";
-import about2 from "../../public/assets/kostyumm.jpg";
-import about3 from "../../public/assets/kostyum.jpg";
-import './Style.css'
+import React from "react";
+import "./Style.css";
 
 function About() {
   return (
@@ -31,14 +27,14 @@ function About() {
           </p>
         </div>
         <div className="right1">
-          <img src={girls} alt="Our story" />
+          <img src="/assets/image.png" alt="Our story" />
         </div>
       </div>
 
       <div className="box2">
         <div className="card">
           <div className="top">
-            <img src="../../public/assets/uy.png" alt="" />
+            <img src="/assets/uy.png" alt="" />
           </div>
           <div className="bottom">
             <h3>10.5k</h3>
@@ -47,7 +43,7 @@ function About() {
         </div>
         <div className="card">
           <div className="top">
-            <img src="../../public/assets/dollar.png" alt="" />
+            <img src="/assets/dollar.png" alt="" />
           </div>
           <div className="bottom">
             <h3>33k</h3>
@@ -56,7 +52,7 @@ function About() {
         </div>
         <div className="card">
           <div className="top">
-            <img src="../../public/assets/setka.png" alt="" />
+            <img src="/assets/setka.png" alt="" />
           </div>
           <div className="bottom">
             <h3>45.5k</h3>
@@ -65,7 +61,7 @@ function About() {
         </div>
         <div className="card">
           <div className="top">
-            <img src="../../public/assets/dollar2.png" alt="" />
+            <img src="/assets/dollar2.png" alt="" />
           </div>
           <div className="bottom">
             <h3>25k</h3>
@@ -77,7 +73,7 @@ function About() {
       <div className="box3">
         <div className="card1">
           <div className="top1">
-            <img src="../../public/assets/1.png" alt="" />
+            <img src="/assets/1.png" alt="" />
           </div>
           <div className="bottom1">
             <h2>Tom Cruise</h2>
@@ -86,7 +82,7 @@ function About() {
         </div>
         <div className="card1">
           <div className="top1">
-            <img src="../../public/assets/2.png" alt="" />
+            <img src="/assets/2.png" alt="" />
           </div>
           <div className="bottom1">
             <h2>Emma Watson</h2>
@@ -95,7 +91,7 @@ function About() {
         </div>
         <div className="card1">
           <div className="top1">
-            <img src="../../public/assets/3.png" alt="" />
+            <img src="/assets/3.png" alt="" />
           </div>
           <div className="bottom1">
             <h2>Will Smith</h2>
@@ -106,23 +102,23 @@ function About() {
 
       <div className="frame782">
         <div className="frame701">
-          <img src="./assets/Services.png" alt="" />
+          <img src="/assets/Services.png" alt="" />
           <h3>FREE AND FAST DELIVERY</h3>
           <p>Free delivery for all orders over $140</p>
         </div>
         <div className="frame702">
-          <img src="./assets/Services (1).png" alt="" />
+          <img src="/assets/Services (1).png" alt="" />
           <h3>24/7 CUSTOMER SERVICE</h3>
           <p>Friendly 24/7 customer support</p>
         </div>
         <div className="frame703">
-          <img src="./assets/Services (2).png" alt="" />
+          <img src="/assets/Services (2).png" alt="" />
           <h3>MONEY BACK GUARANTEE</h3>
           <p>We return money within 30 days</p>
         </div>
       </div>
     </>
   );
-};
+}
 
 export default About;

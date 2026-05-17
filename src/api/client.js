@@ -5,7 +5,17 @@ async function request(path, options = {}) {
   const headers = { "Content-Type": "application/json", ...(options.headers || {}) };
   const config = { ...options, headers };
 
-  const response = await fetch(url, config);
+  let response;
+  try {
+    response = await fetch(url, config);
+  } catch (error) {
+    const networkError = new Error(
+      `Server bilan bog'lanib bo'lmadi. Backend ishga tushganini tekshiring: ${API_BASE}`
+    );
+    networkError.cause = error;
+    networkError.isNetworkError = true;
+    throw networkError;
+  }
   const contentType = response.headers.get("content-type") || "";
   const isJson = contentType.includes("application/json");
   const data = isJson ? await response.json() : await response.text();

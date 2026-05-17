@@ -31,7 +31,7 @@ const heroMenu = [
 
 const heroSlides = [
   {
-    imageUrl: "./assets/Frame 560.png",
+    imageUrl: "/assets/Frame 560.png",
     title: "slide1",
     link: "#",
     isActive: true,
@@ -1119,7 +1119,7 @@ function Home({ searchText, onAddToWishlist, onAddToCart }) {
         </div>
 
         <div className="right">
-          <img src="./assets/Frame 694.png" alt="JBL Speaker" />
+          <img src="/assets/Frame 694.png" alt="JBL Speaker" />
         </div>
       </div>
 
@@ -1190,17 +1190,17 @@ function Home({ searchText, onAddToWishlist, onAddToCart }) {
 
       <div className="frame782">
         <div className="frame701">
-          <img src="./assets/Services.png" alt="" />
+          <img src="/assets/Services.png" alt="" />
           <h3>FREE AND FAST DELIVERY</h3>
           <p>Free delivery for all orders over $140</p>
         </div>
         <div className="frame702">
-          <img src="./assets/Services (1).png" alt="" />
+          <img src="/assets/Services (1).png" alt="" />
           <h3>24/7 CUSTOMER SERVICE</h3>
           <p>Friendly 24/7 customer support</p>
         </div>
         <div className="frame703">
-          <img src="./assets/Services (2).png" alt="" />
+          <img src="/assets/Services (2).png" alt="" />
           <h3>MONEY BACK GUARANTEE</h3>
           <p>We return money within 30 days</p>
         </div>

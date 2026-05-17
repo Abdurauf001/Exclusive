@@ -46,7 +46,7 @@ function SignUp2({ setIsLogged }) {
     <>
       <div id="main">
         <div className="left">
-          <img src="/public/assets/Side Image.png" alt="" />
+          <img src="/assets/Side Image.png" alt="" />
         </div>
         <div className="right">
           <div className="frame759">
